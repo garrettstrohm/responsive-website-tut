@@ -1,13 +1,25 @@
 import React from 'react'
+import { Container } from '../../globalStyles'
 import {
-    InfoSec
+    InfoSec,
+    InfoRow,
+    InfoColumn,
+    TextWrapper
 } from './InfoSection.elements'
 
-const InfoSection = ({lightBg}) => {
+const InfoSection = ({lightBg, imgStart}) => {
   return (
     <>
        <InfoSec lightBg={lightBg}>
-           Hi
+            <Container>
+                <InfoRow imgStart={imgStart}>
+                    <InfoColumn>
+                        <TextWrapper>
+                            Home Page
+                        </TextWrapper>
+                    </InfoColumn>
+                </InfoRow>
+            </Container>
         </InfoSec> 
     </>
   )
