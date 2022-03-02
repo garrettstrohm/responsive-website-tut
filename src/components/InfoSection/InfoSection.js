@@ -4,10 +4,24 @@ import {
     InfoSec,
     InfoRow,
     InfoColumn,
-    TextWrapper
+    TextWrapper,
+    TopLine,
+    Heading,
+    Subtitle
 } from './InfoSection.elements'
 
-const InfoSection = ({lightBg, imgStart}) => {
+const InfoSection = ({
+    primary, 
+    lightBg, 
+    imgStart, 
+    lightTopLine, 
+    lightText, 
+    lightTextDesc, 
+    topLine, 
+    buttonLabel, 
+    description, 
+    headline 
+}) => {
   return (
     <>
        <InfoSec lightBg={lightBg}>
@@ -15,7 +29,14 @@ const InfoSection = ({lightBg, imgStart}) => {
                 <InfoRow imgStart={imgStart}>
                     <InfoColumn>
                         <TextWrapper>
-                            Home Page
+                            <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                            <Link to='/sign-up'>
+                                <Button big fontBig primary={primary}>
+                                    {buttonLabel}
+                                </Button>
+                            </Link>
                         </TextWrapper>
                     </InfoColumn>
                 </InfoRow>
