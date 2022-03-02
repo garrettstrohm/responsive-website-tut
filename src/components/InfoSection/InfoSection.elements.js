@@ -39,3 +39,5 @@ export const TextWrapper = styled.div`
         padding-bottom: 65px;
     }
 `;
+
+
