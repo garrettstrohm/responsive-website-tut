@@ -4,10 +4,24 @@ import {
     InfoSec,
     InfoRow,
     InfoColumn,
-    TextWrapper
+    TextWrapper,
+    TopLine,
+    Heading,
+    Subtitle
 } from './InfoSection.elements'
 
-const InfoSection = ({lightBg, imgStart}) => {
+const InfoSection = ({
+    primary, 
+    lightBg, 
+    imgStart, 
+    lightTopLine, 
+    lightText, 
+    lightTextDesc, 
+    topLine, 
+    buttonLabel, 
+    description, 
+    headline 
+}) => {
   return (
     <>
        <InfoSec lightBg={lightBg}>
