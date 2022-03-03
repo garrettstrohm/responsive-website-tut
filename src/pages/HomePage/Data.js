@@ -21,7 +21,7 @@ export const homeObjOne = {
   };
 
   export const homeObjTwo = {
-    primary: false,
+    primary: true,
     lightBg: true,
     lightTopLine: false,
     lightText: false,
@@ -38,7 +38,7 @@ export const homeObjOne = {
   };
 
   export const homeObjThree = {
-    primary: false,
+    primary: true,
     lightBg: false,
     lightTopLine: true,
     lightText: true,
@@ -55,7 +55,7 @@ export const homeObjOne = {
   };
 
   export const homeObjFour = {
-    primary: false,
+    primary: true,
     lightBg: true,
     lightTopLine: false,
     lightText: false,
