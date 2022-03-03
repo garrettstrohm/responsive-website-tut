@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../../globalStyles.js'
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
 import {
     FooterContainer,
     FooterSubHeading,
@@ -11,7 +12,14 @@ import {
     FooterLinkTitle,
     FooterLinksContainer,
     FooterLinksWrapper,
-    FooterLinksItems
+    FooterLinksItems,
+    SocialIcon,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialIconLink,
+    SocialIcons,
+    SocialLogo,
+    WebsiteRights
 } from './Footer.elements.js'
 const Footer = () => {
   return (
@@ -45,7 +53,9 @@ const Footer = () => {
                     <FooterLink to='/'>Careers</FooterLink>
                     <FooterLink to='/'>Investors</FooterLink>
                     <FooterLink to='/'>Terms of Service</FooterLink>
-                </FooterLinksItems>
+            </FooterLinksItems>
+            </FooterLinksWrapper>
+                <FooterLinksWrapper>
                 <FooterLinksItems>
                     <FooterLinkTitle>Resources</FooterLinkTitle>
                     <FooterLink to='/sign-up'>How it works</FooterLink>
@@ -64,6 +74,31 @@ const Footer = () => {
                 </FooterLinksItems>
             </FooterLinksWrapper>
         </FooterLinksContainer>
+        <SocialMedia>
+            <SocialMediaWrap>
+                <SocialLogo to='/'>
+                    <SocialIcon/>
+                    COMPANY
+                </SocialLogo>
+                <WebsiteRights>
+                    Company 2022
+                </WebsiteRights>
+                <SocialIcons>
+                    <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+                        <FaFacebook />
+                    </SocialIconLink>
+                    <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+                        <FaInstagram />
+                    </SocialIconLink>
+                    <SocialIconLink href={'https://www.youtube.com/channel/UC69GIppDOwRiTFhBzfgruMQ'} target='_blank' aria-label='Youtube' rel='noopener noreferrer'>
+                        <FaYoutube />
+                    </SocialIconLink>
+                    <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
+                        <FaTwitter />
+                    </SocialIconLink>
+                </SocialIcons>
+            </SocialMediaWrap>
+        </SocialMedia>
     </FooterContainer>
   )
 }
